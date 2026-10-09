@@ -2,8 +2,8 @@ import { Link, useParams } from 'react-router-dom'
 import ItemListContainer from '../components/ItemListContainer.jsx'
 
 const categories = {
-  frutas: { label: 'Frutas de estación', intro: 'Fruta fresca, elegida en su punto y directo de productores locales.' },
-  verduras: { label: 'Verduras y hortalizas', intro: 'Productos de huerta para cocinar rico, simple y de temporada.' },
+  memorias: { label: 'Memorias RAM', intro: 'Módulos para actualizar tu PC o notebook. Te ayudamos a confirmar compatibilidad.' },
+  'discos-rigidos': { label: 'Discos rígidos', intro: 'Más espacio para tu equipo, con opciones de almacenamiento para distintos usos.' },
 }
 
 export default function CategoryPage() {

@@ -39,20 +39,22 @@ export default function ProductPage() {
   if (loading) return <p className="catalog-message" role="status">Cargando producto...</p>
   if (error) return <section className="page-intro"><p className="error-message">{error}</p><Link className="text-link" to="/">Volver al catálogo <span aria-hidden="true">↗</span></Link></section>
 
+  const categoryLabel = producto.categoria === 'memorias' ? 'Memorias RAM' : 'Discos rígidos'
+
   return (
     <section className="product-detail">
       <div className="detail-image-wrap">
-        <img src={producto.imagen} alt={`${producto.nombre}, ${producto.origen}`} />
+        <img src={producto.imagen} alt={`${producto.nombre}, ${producto.marca}`} />
         <span className="product-tag">{producto.etiqueta}</span>
       </div>
       <div className="detail-copy">
-        <p className="eyebrow"><Link to={`/categoria/${producto.categoria}`}>Colección / {producto.categoria}</Link></p>
+        <p className="eyebrow"><Link to={`/categoria/${producto.categoria}`}>Productos / {categoryLabel}</Link></p>
         <h1>{producto.nombre}<em>.</em></h1>
-        <p className="detail-origin">{producto.origen}</p>
-        <p className="detail-notes">{producto.notas}</p>
+        <p className="detail-origin">Marca: {producto.marca}</p>
+        <p className="detail-notes">{producto.especificaciones} · {producto.interfaz}</p>
         <p className="detail-description">{producto.descripcion}</p>
-        <div className="detail-price-row"><strong>{priceFormatter.format(producto.precio)}</strong><span>{producto.peso}</span></div>
-        <p className="detail-note">Producto de muestra para la pre-entrega. El carrito se incorpora en la entrega final.</p>
+        <div className="detail-price-row"><strong>{priceFormatter.format(producto.precio)}</strong><span>{producto.capacidad}</span></div>
+        <p className="detail-note">Retiro y asesoramiento en nuestro local de Morón. Verificá la compatibilidad con tu equipo antes de comprar.</p>
         <Link className="button button-dark" to={`/categoria/${producto.categoria}`}>Seguir explorando <span aria-hidden="true">↗</span></Link>
       </div>
     </section>

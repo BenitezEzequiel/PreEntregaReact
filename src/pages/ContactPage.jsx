@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 
 const locations = [
-  { neighborhood: 'Palermo', address: 'Gurruchaga 812', hours: 'Lun a sáb · 9 a 20 h' },
-  { neighborhood: 'Villa Crespo', address: 'Forest 420', hours: 'Lun a sáb · 9 a 20 h' },
+  { neighborhood: 'Morón centro', address: 'Buen Viaje 780', hours: 'Lun a sáb · 9 a 19 h' },
+  { neighborhood: 'Morón sur', address: 'Av. Rivadavia 18000', hours: 'Lun a sáb · 9 a 19 h' },
 ]
 
 export default function ContactPage() {
@@ -11,7 +11,7 @@ export default function ContactPage() {
       <section className="page-intro contact-intro">
         <p className="eyebrow">Estamos cerca</p>
         <h1>Pasá a saludar<em>.</em></h1>
-        <p>Te esperamos para elegir juntos algo rico y de estación.</p>
+        <p>Estamos en Morón para ayudarte a encontrar el componente compatible con tu equipo.</p>
       </section>
       <section className="contact-section">
         <div className="contact-main">
@@ -33,8 +33,8 @@ export default function ContactPage() {
         <aside className="contact-aside">
           <p className="eyebrow">¿Tenés una consulta?</p>
           <h2>Hablemos.</h2>
-          <p>Escribinos por productos, pedidos especiales o para conocer más sobre nuestros productores.</p>
-          <a className="text-link" href="mailto:hola@fruteria.com.ar">hola@fruteria.com.ar <span aria-hidden="true">↗</span></a>
+          <p>Escribinos por disponibilidad, compatibilidad, pedidos o servicio técnico.</p>
+          <a className="text-link" href="mailto:hola@bytemoron.com.ar">hola@bytemoron.com.ar <span aria-hidden="true">↗</span></a>
           <p className="contact-phone">+54 11 4321 5678</p>
           <Link className="button button-dark" to="/productos">Ver productos <span aria-hidden="true">↗</span></Link>
         </aside>

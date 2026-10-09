@@ -33,11 +33,11 @@ export default function ItemListContainer({ title, description, category }) {
     <section className="catalog-section" id="catalogo">
       <div className="section-heading">
         <div>
-          <p className="eyebrow">La selección de la casa</p>
+          <p className="eyebrow">Byte Morón · Componentes disponibles</p>
           <h2>{title}</h2>
           {description && <p className="section-description">{description}</p>}
         </div>
-        {!category && <span className="catalog-count">0{productos.length} piezas</span>}
+        {!category && <span className="catalog-count">{productos.length} productos</span>}
       </div>
       {loading && <p className="catalog-message" role="status">Preparando la selección...</p>}
       {error && <p className="catalog-message error-message" role="alert">{error}</p>}

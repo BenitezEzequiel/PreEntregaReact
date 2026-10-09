@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const team = [
-  { name: 'Lucía Peralta', role: 'Selección y calidad', initials: 'LP' },
-  { name: 'Tomás Ríos', role: 'Productores locales', initials: 'TR' },
-  { name: 'Malena Soto', role: 'Atención y comunidad', initials: 'MS' },
+  { name: 'Ezequiel Benítez', role: 'Atención y ventas', initials: 'EB' },
+  { name: 'Lucía Peralta', role: 'Compatibilidad de hardware', initials: 'LP' },
+  { name: 'Tomás Ríos', role: 'Servicio técnico', initials: 'TR' },
 ]
 
 export default function Footer() {
@@ -20,45 +20,45 @@ export default function Footer() {
       <div className="footer-top">
         <div className="footer-brand-block">
           <Link className="brand footer-brand" to="/">
-            <span className="brand-mark" aria-hidden="true">f.</span>
-            <span className="brand-name">Frute<span>ría</span></span>
+            <span className="brand-mark" aria-hidden="true">b.</span>
+            <span className="brand-name">byte<span>morón</span></span>
           </Link>
-          <p>Fresco y de estación.<br />Cerca de quienes producen.</p>
-          <a className="footer-email" href="mailto:hola@fruteria.com.ar">hola@fruteria.com.ar ↗</a>
+          <p>Hardware y asesoramiento.<br />A unas cuadras de casa.</p>
+          <a className="footer-email" href="mailto:hola@bytemoron.com.ar">hola@bytemoron.com.ar ↗</a>
         </div>
 
         <div className="footer-column">
-          <h2>La tienda</h2>
+          <h2>Componentes</h2>
           <Link to="/productos">Todos los productos</Link>
-          <Link to="/categoria/frutas">Frutas de estación</Link>
-          <Link to="/categoria/verduras">Verduras y hortalizas</Link>
-          <a href="mailto:hola@fruteria.com.ar?subject=Privacidad">Política de privacidad</a>
-          <a href="mailto:hola@fruteria.com.ar?subject=Terminos%20y%20condiciones">Términos y condiciones</a>
+          <Link to="/categoria/memorias">Memorias RAM</Link>
+          <Link to="/categoria/discos-rigidos">Discos rígidos</Link>
+          <a href="mailto:hola@bytemoron.com.ar?subject=Privacidad">Política de privacidad</a>
+          <a href="mailto:hola@bytemoron.com.ar?subject=Terminos%20y%20condiciones">Términos y condiciones</a>
         </div>
 
         <div className="footer-column footer-locations" id="sedes">
           <h2>Encontranos</h2>
-          <p>Palermo<br />Gurruchaga 812, Buenos Aires</p>
-          <p>Villa Crespo<br />Forest 420, Buenos Aires</p>
-          <a href="mailto:hola@fruteria.com.ar">Cómo llegar ↗</a>
+          <p>Morón centro<br />Buen Viaje 780, Morón</p>
+          <p>Morón sur<br />Av. Rivadavia 18000, Morón</p>
+          <a href="mailto:hola@bytemoron.com.ar">Cómo llegar ↗</a>
         </div>
 
         <div className="newsletter" id="newsletter">
-          <p className="eyebrow">Una carta breve, cada tanto</p>
-          <h2>Novedades frescas.</h2>
+          <p className="eyebrow">Novedades del local</p>
+          <h2>Stock y tecnología.</h2>
           <form className="newsletter-form" onSubmit={handleSubscribe}>
             <label className="visually-hidden" htmlFor="newsletter-email">Tu correo electrónico</label>
             <input id="newsletter-email" type="email" placeholder="Tu correo electrónico" required disabled={subscribed} />
             <button type="submit" aria-label="Suscribirme" disabled={subscribed}>{subscribed ? '✓' : '↗'}</button>
           </form>
-          <p className="newsletter-status" role="status">{subscribed ? '¡Listo! Ya estás en la lista.' : 'Novedades de temporada, directo a tu correo.'}</p>
+          <p className="newsletter-status" role="status">{subscribed ? '¡Listo! Ya estás en la lista.' : 'Productos nuevos y ofertas, directo a tu correo.'}</p>
         </div>
       </div>
 
       <div className="team-section">
         <div className="team-heading">
-          <p className="eyebrow">Las personas detrás de cada elección</p>
-          <h2>Un trabajo <em>compartido.</em></h2>
+          <p className="eyebrow">El equipo de Byte Morón</p>
+          <h2>Tecnología con <em>respaldo.</em></h2>
         </div>
         <div className="team-grid">
           {team.map((person) => (
@@ -72,8 +72,8 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom" id="privacidad">
-        <p>© 2026 Frutería. Marca y contenido protegidos por propiedad intelectual.</p>
-        <p>Hecho despacio en Buenos Aires, Argentina.</p>
+        <p>© 2026 Byte Morón. Marca y contenido protegidos por propiedad intelectual.</p>
+        <p>Morón, Buenos Aires, Argentina.</p>
       </div>
     </footer>
   )

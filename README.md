@@ -1,6 +1,6 @@
-# Frutería
+# Byte Morón
 
-Proyecto de pre-entrega para practicar React, componentes, `useEffect`, `fetch` y navegación con React Router. Representa una frutería de productos de estación. Nombres, integrantes, sedes, precios e imágenes son contenido de muestra y deben adaptarse antes de publicar.
+Proyecto de pre-entrega para practicar React, componentes, `useEffect`, `fetch` y navegación con React Router. Representa un local de memorias RAM y discos rígidos en Morón. Los nombres del equipo, direcciones, contacto, precios e imágenes son datos de muestra y deben reemplazarse por los reales antes de publicar.
 
 ## Requisitos
 
@@ -20,16 +20,16 @@ Para generar una compilación de producción: `npm run build`. Para previsualiza
 
 - `/`: inicio
 - `/productos`: catálogo completo
-- `/categoria/frutas`: frutas de estación
-- `/categoria/verduras`: verduras y hortalizas
+- `/categoria/memorias`: memorias RAM
+- `/categoria/discos-rigidos`: discos rígidos
 - `/contacto`: sedes y contacto
 - `/producto/:id`: detalle de producto
 - Cualquier ruta inexistente muestra la página 404
 
 ## Datos
 
-El catálogo está en `public/productos.json`. `ItemListContainer.jsx` lo solicita con `fetch` dentro de `useEffect`; `Item.jsx` presenta cada producto. Las imágenes de ejemplo se sirven desde Unsplash y requieren conexión a internet.
+El catálogo está en `public/productos.json`. `ItemListContainer.jsx` lo solicita con `fetch` dentro de `useEffect`; `Item.jsx` presenta cada producto. Los precios son ilustrativos y las imágenes de ejemplo se sirven desde Unsplash, por lo que requieren conexión a internet.
 
-El footer incluye enlaces de contacto, privacidad, términos, sedes y un formulario de newsletter demostrativo. El formulario confirma localmente la suscripción, pero no almacena correos ni se conecta a un servicio externo. Las tres tarjetas de equipo también son de ejemplo.
+El footer incluye contacto, privacidad, términos, dos sedes de muestra en Morón y un formulario de newsletter demostrativo. El formulario confirma localmente la suscripción, pero no almacena correos ni se conecta a un servicio externo. Las tarjetas del equipo también son de ejemplo.
 
 El carrito y Context API quedan fuera de esta pre-entrega, según la consigna.

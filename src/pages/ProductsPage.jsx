@@ -5,10 +5,10 @@ export default function ProductsPage() {
     <>
       <section className="page-intro category-intro">
         <p className="eyebrow">Tienda / Productos</p>
-        <h1>La selección <em>fresca.</em></h1>
-        <p>Frutas y verduras de estación, elegidas cada mañana con productores locales.</p>
+        <h1>Componentes para tu <em>equipo.</em></h1>
+        <p>Memorias RAM y discos para PC y notebook, con asesoramiento en nuestro local de Morón.</p>
       </section>
-      <ItemListContainer title="Todo lo que está en temporada" />
+      <ItemListContainer title="Todo el hardware" />
     </>
   )
 }

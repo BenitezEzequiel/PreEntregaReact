@@ -5,12 +5,12 @@ export default function HomePage() {
   return (
     <>
       <section className="hero">
-        <div className="hero-image" role="img" aria-label="Frutas y verduras frescas en un mercado" />
+        <div className="hero-image" role="img" aria-label="Componentes electrónicos para computadora" />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <p className="eyebrow hero-eyebrow">Frutas y verduras · De estación</p>
-          <h1>Lo fresco<br />se elige <em>cerca.</em></h1>
-          <p className="hero-description">Frutas y verduras de temporada, seleccionadas en su punto y traídas de productores que conocemos.</p>
+          <p className="eyebrow hero-eyebrow">Hardware · Asesoramiento local</p>
+          <h1>Más velocidad.<br />Más <em>espacio.</em></h1>
+          <p className="hero-description">Memorias RAM y discos para actualizar tu computadora. Te ayudamos a encontrar el componente compatible con tu equipo.</p>
           <Link className="button button-light" to="/productos">Ver productos <span aria-hidden="true">↗</span></Link>
         </div>
         <span className="hero-index">01 / 03</span>
@@ -18,24 +18,24 @@ export default function HomePage() {
       </section>
 
       <div className="origin-strip" aria-label="Nuestro compromiso">
-        <span>De estación</span><i />
-        <span>Productores locales</span><i />
-        <span>Selección diaria</span><i />
-        <span>Comercio justo</span>
+        <span>Marcas seleccionadas</span><i />
+        <span>Compatibilidad asesorada</span><i />
+        <span>Retiro en Morón</span><i />
+        <span>Atención personalizada</span>
       </div>
 
       <ItemListContainer
-        title="La huerta llega a tu mesa."
-        description="Frutas y verduras frescas, elegidas con cuidado y listas para disfrutar."
+        title="Actualizá tu equipo."
+        description="Memorias y almacenamiento para que tu computadora acompañe lo que necesitás hacer."
       />
 
       <section className="story-band" id="nosotros">
-        <div className="story-image" role="img" aria-label="Ingredientes frescos de estación" />
+        <div className="story-image" role="img" aria-label="Componentes internos de una computadora" />
         <div className="story-copy">
-          <p className="eyebrow">Un poco de nosotros</p>
-          <h2>Del productor.<br /><em>A tu mesa.</em></h2>
-          <p>En Frutería creemos que comer rico empieza por elegir bien. Trabajamos con productores de la zona para acercarte productos frescos, de temporada y con una historia que vale la pena conocer.</p>
-          <Link className="text-link" to="/contacto">Conocé nuestras sedes <span aria-hidden="true">↗</span></Link>
+          <p className="eyebrow">Tecnología cerca tuyo</p>
+          <h2>Tu equipo.<br /><em>Bien armado.</em></h2>
+          <p>Somos un local de Morón especializado en memorias y discos. Te damos una mano para revisar compatibilidad, elegir capacidad y llevarte el componente indicado para tu PC o notebook.</p>
+          <Link className="text-link" to="/contacto">Visitá el local en Morón <span aria-hidden="true">↗</span></Link>
         </div>
       </section>
     </>
