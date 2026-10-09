@@ -16,6 +16,10 @@ npm run dev
 
 Para generar una compilación de producción: `npm run build`. Para previsualizarla: `npm run preview`.
 
+## GitHub Pages
+
+El workflow de `.github/workflows/deploy-pages.yml` publica automáticamente en GitHub Pages cada vez que se actualiza `main`. La URL del sitio será `https://benitezezequiel.github.io/PreEntregaReact/`. Si Pages aún no está habilitado en el repositorio, elegí **Settings → Pages → Source → GitHub Actions**. El build incluye un fallback para que las rutas de React Router sigan funcionando al recargar una página.
+
 ## Rutas
 
 - `/`: inicio
