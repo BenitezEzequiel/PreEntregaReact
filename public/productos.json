@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "nombre": "Frutillas de estación",
+    "categoria": "frutas",
+    "origen": "Productores de la zona",
+    "notas": "Dulces, frescas y recién cosechadas",
+    "descripcion": "Frutillas seleccionadas en su punto justo de maduración. Ideales para comer frescas, sumar al desayuno o preparar algo rico para compartir.",
+    "precio": 4800,
+    "peso": "500 g",
+    "imagen": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=1000&q=85",
+    "etiqueta": "De estación"
+  },
+  {
+    "id": "2",
+    "nombre": "Naranjas de jugo",
+    "categoria": "frutas",
+    "origen": "Concordia, Entre Ríos",
+    "notas": "Jugosas, dulces y llenas de aroma",
+    "descripcion": "Naranjas cosechadas en Entre Ríos, con mucho jugo y sabor. Una opción simple para arrancar el día o preparar una limonada distinta.",
+    "precio": 3200,
+    "peso": "1 kg",
+    "imagen": "https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=1000&q=85",
+    "etiqueta": "Cosecha local"
+  },
+  {
+    "id": "3",
+    "nombre": "Manzanas rojas",
+    "categoria": "frutas",
+    "origen": "Alto Valle, Río Negro",
+    "notas": "Crocantes, dulces y aromáticas",
+    "descripcion": "Manzanas del Alto Valle, seleccionadas por su frescura y textura crocante. Para llevar, cocinar o tener siempre a mano.",
+    "precio": 3900,
+    "peso": "1 kg",
+    "imagen": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=1000&q=85",
+    "etiqueta": "Favorito"
+  },
+  {
+    "id": "4",
+    "nombre": "Palta Hass",
+    "categoria": "verduras",
+    "origen": "Tucumán, Argentina",
+    "notas": "Cremosa, suave y de pulpa pareja",
+    "descripcion": "Palta Hass de textura cremosa y sabor suave. Va con tostadas, ensaladas o como más te guste.",
+    "precio": 6500,
+    "peso": "2 unidades",
+    "imagen": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=1000&q=85",
+    "etiqueta": "Selección diaria"
+  },
+  {
+    "id": "5",
+    "nombre": "Zanahorias de huerta",
+    "categoria": "verduras",
+    "origen": "Huertas de Buenos Aires",
+    "notas": "Firmes, dulces y recién cosechadas",
+    "descripcion": "Zanahorias de huerta cosechadas hace poco, con su dulzor natural y listas para sumar a cualquier plato.",
+    "precio": 2400,
+    "peso": "1 kg",
+    "imagen": "https://images.unsplash.com/photo-1445282768818-728615cc910a?auto=format&fit=crop&w=1000&q=85",
+    "etiqueta": "De la huerta"
+  },
+  {
+    "id": "6",
+    "nombre": "Tomates redondos",
+    "categoria": "verduras",
+    "origen": "La Plata, Buenos Aires",
+    "notas": "De pulpa firme y sabor intenso",
+    "descripcion": "Tomates de productores platenses, cosechados maduros para que lleguen con todo su sabor a tu mesa.",
+    "precio": 3500,
+    "peso": "1 kg",
+    "imagen": "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=1000&q=85",
+    "etiqueta": "Cosecha local"
+  }
+]
